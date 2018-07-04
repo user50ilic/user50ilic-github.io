@@ -1,0 +1,48 @@
+// *********************
+//  GENERAL
+// *********************
+
+
+// ---------------------
+//  NAV GENERAL
+// ---------------------
+
+.nav-wrapper {
+  .navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+
+// ---------------------
+//  JUMBOTRONE GENERAL
+// ---------------------
+
+.jumbotron {
+  padding: 10em !important;
+  text-align: center;
+  background-image: url('Layers/math-bg.jpg');
+
+  .container {
+    color:black;
+    font-weight: bold;
+  }
+}
+
+
+// ---------------------
+//  FOOTER GENERAL
+// ---------------------
+
+.footer-wrapper {
+
+.navbar-nav {
+width: 100% !important;
+display: flex;
+justify-content: space-between;
+
+
+}
+}
