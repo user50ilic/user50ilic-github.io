@@ -1,5 +1,20 @@
 
 
+$(document).ready(function(){
+  $(window).scrollTop($('#pocetna').offset().top);
+  $('.main-p').addClass('animated fadeInLeft')
+  $('.fade-left-up').addClass('animated fadeOut')
+  $('.fade-right-up').addClass('animated fadeOut')
+  $('.fade-left-down').addClass('animated fadeOut')
+  $('.fade-right-down').addClass('animated fadeOut')
+})
+
+
+
+
+
+
+
 //BUTTON animation
 //________________
 
@@ -18,6 +33,11 @@ $(window).scroll(function (event) {
     let scroll = $(window).scrollTop();
     console.log(scroll);
 
+
+
+
+
+
     if(scroll >=150){
       $('.nav-container').slideUp(200);
     }
@@ -26,12 +46,17 @@ $(window).scroll(function (event) {
     }
 
     if(scroll >200){
+      $('.fade-left-up').removeClass('animated fadeOut')
+      $('.fade-right-up').removeClass('animated fadeOut')
 
       $('.fade-left-up').addClass('animated fadeInUp')
       $('.fade-right-up').addClass('animated fadeIn')
       }
 
     if(scroll >600){
+
+      $('.fade-left-down').removeClass('animated fadeOut')
+      $('.fade-right-down').removeClass('animated fadeOut')
 
       $('.fade-right-down').addClass('animated fadeIn')
       $('.fade-left-down').addClass('animated fadeInUp')
@@ -41,9 +66,6 @@ $(window).scroll(function (event) {
 });
 
 
-$(document).ready(function(){
-  $('.main-p').addClass('animated fadeInLeft')
-})
 
 
 
