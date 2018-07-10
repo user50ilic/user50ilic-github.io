@@ -163,11 +163,18 @@ body{
 
     h1 {
       font-size: 5.5em;
+      margin: 0 0 1rem 0;
+
     }
 
-    p {
+    .main-p {
       font-size: 2.3em;
       color:#404040;
+      opacity: 0;
+      transform:translateX(-250px);
+      -webkit-transition: all 1s ease 0s;
+      -o-transition: all 1s ease 0s;
+      transition: all 1s ease 0s;
     }
 
     .com {
@@ -386,7 +393,7 @@ body{
   padding:0;
   background-color: #2C363F;
   color:white;
-  height: 4em;
+  height: 8em;
    border-top:1px solid #363E44;
 
   .footer-wrapper{
@@ -396,6 +403,7 @@ body{
   }
   .row{
     height: 100%;
+    width:100%;
 
     .col-lg-4 {
       display: flex;
@@ -436,6 +444,11 @@ body{
 //******************
 
 
+// ------------
+// LAPTOP
+// ------------
+
+
 @media (max-width: 1199.98px) {
   .iframe{
     width:80vw !important;
@@ -457,6 +470,10 @@ body{
 }
 
 }
+
+// ------------
+// TABLET
+// ------------
 
 
 @media (max-width: 991.98px) {
@@ -539,6 +556,10 @@ body{
       li{
         padding:0.3em 0 !important;
       }
+    }
+
+    .footer-container{
+      height:13em;
     }
 
  }
