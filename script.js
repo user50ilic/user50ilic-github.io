@@ -80,8 +80,6 @@ $('#priprema').click(function() {
     }, 1400);
 });
 
-$('.contact').click(function() {
-    $('html, body').animate({
-        scrollTop: $('.footer-container').offset().top
-    }, 1000);
+$(".contact").click(function() {
+  $('html,body').animate({ scrollTop: 1500 } ,1200);
 });
